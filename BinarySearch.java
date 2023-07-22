@@ -7,6 +7,13 @@ public class BinarySearch {
         findElementUsingBS(array,find,0,array.length);
     }
 
+    /*
+    * Time complexity O(log N) as we are dividing every step by 2
+    *  How to calculate time complexity for binary search
+    *  n/2,n/4,n/6,n/8...
+    *  lets say n/(2^p) = 1
+    *  (2^p =n) ==> if we want p then p= (log base2 n);
+    * */
     public static void findElementUsingBS(int[] input,int element,int start,int end){
         while(start<=end){
             int mid= (start+end)/2;
