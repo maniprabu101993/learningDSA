@@ -23,6 +23,12 @@ package git.Easy.PrefixSum;
  *  </code>
  *  Here the time complexity for the problem is O(N)
  *  Space complexity for using prefixSum is O(N)
+ *
+ *  Eg:   A =  {1, 5, 8, -3, -2, 11}
+ * prefixSum = {1, 6, 14, 11, 9, 20}
+ *     Here if i=2, then A[i]= 8, now leftSum = A[i-1] ie.. A[1]=6 so leftSum=6 and
+ *                                now rightSum = A[N-1]-A[i+1-1] ie.. A[6-1] - A[2] => A[5]-A[2] => 20-14 =6 so rightSum =6 . Left & RightSum are equal.
+ *                                So 8 is one of the equilibrium index
  */
 public class EquilibriumIndexUsingPrefixSum {
     public static void main(String[] args) {
