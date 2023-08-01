@@ -1,6 +1,13 @@
 package git.Easy.commonPrefix;
-/*
+/**
 * Find the occurrence of a char in the character array in the given range
+* Here the time complexity for the prefix sum approach is O(N+Q)
+* The time complexity for this approach is O(N) as we are creating an extra int[] for storing prefixSum
+* Make the targetChar as 1 and all other char as 0 so that we can add the numbers to find the count in the given range
+* Formula
+ * if i!=0 then prefixSum[i] = prefixSum[i-1]+ A[i]
+ * else if i==0 then
+ *   prefixSum[i]=prefixSum[i-1]
 *
 * */
 public class PrefixSumCountAlphabetOccurence {
