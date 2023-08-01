@@ -1,4 +1,4 @@
-package git.Easy.commonPrefix;
+package git.Easy.PrefixSum;
 
 public class AlphabetOccurence {
     /**
