@@ -1,4 +1,4 @@
-package git.Easy.PrefixSum;
+package git.Easy.PrefixSum.prefixString;
 
 import java.util.Arrays;
 

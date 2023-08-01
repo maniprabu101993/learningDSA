@@ -12,16 +12,16 @@ public class AlphabetOccurence {
         int[][] range = {{4, 4}, {1, 4}, {2, 3}, {0, 3}}; //Q -> length of query range
         int[] output = new int[range.length];
         int counter = 0;
-        for (int i = 0; i < range.length; i++) {
-            int start = range[i][0];
-            int end = range[i][1];
-            for (int j = start; j <= end; j++) {
-                if (toFind == array[i]) {
-                    counter++;
-                }
-            }
-            System.out.println(counter);
-            output[i] = counter;
+        for (int i = 0; i < range.length; i++) {                    //
+            int start = range[i][0];                                //
+            int end = range[i][1];                                  //
+            for (int j = start; j <= end; j++) {  //                //
+                if (toFind == array[i]) {         //                //     Time Complexity => O(N*Q)   where Q is the length of query range
+                    counter++;                    //O(N)            //
+                }                                 //                //
+            }                                     //                //
+            System.out.println(counter);                            //
+            output[i] = counter;                                    //
         }
     }
 }

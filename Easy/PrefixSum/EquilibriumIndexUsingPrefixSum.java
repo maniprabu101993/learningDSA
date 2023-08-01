@@ -18,6 +18,8 @@ package git.Easy.PrefixSum;
  *  =============================
  *  <code>
  *      Sum(L,R) = prefixSum(R) - prefixSum(L-1)
+ *    @Left(L) => 0, i-1
+ *    @Right(R) => i+1, N-1
  *  </code>
  *  Here the time complexity for the problem is O(N)
  *  Space complexity for using prefixSum is O(N)

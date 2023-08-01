@@ -12,7 +12,7 @@ import java.util.Arrays;
  * ==================
  * sum(L,R) = prefixSum[R] - prefixSum[L-1]
  *
- * TimeComplexity for this problem is O(N*Q) where Q is the queries range size
+ * TimeComplexity for this problem is O(N+Q) where Q is the queries range size
  * SpaceComplexity for this problem is O(N) which is the prefixSum Array.
  * ,
  * [8,6,5,4,3,56,2,1] Mark all the even numbers as 1 as given below so that we can calculate the number of even numbers in the range
@@ -37,7 +37,7 @@ public class NumberOfEvenNumbersInRange {
             prefixSum[i] = prefixSum[i - 1] + (input[i] % 2 == 0 ? 1 : 0);                         //  O(N)             //
         }                                                                                          //                   //
                                                                                                                         //
-        for(int j=0;j<queries.length;j++){                                                         //                   //      Time Complexity: O(N*Q)
+        for(int j=0;j<queries.length;j++){                                                         //                   //      Time Complexity: O(N+Q)
             int start= queries[j][0];                                                              //                   //
             int end= queries[j][1];                                                                //   O(Q)            //
             output[j] = prefixSum[end]- (start ==0 ? 0:prefixSum[start-1]);                        //                   //
