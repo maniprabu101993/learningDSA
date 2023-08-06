@@ -28,24 +28,24 @@ public class AmazingSubstring {
         for(Character val:inputs){
             list.add(val);
         }
-        for(int i=0;i<A.length();i++){
-            if(list.contains(A.charAt(i))){
-                for(int j=i;j<A.length();j++){
-                    counter = counter+1;
-                }
-            }
-        }
+        for(int i=0;i<A.length();i++){                           //
+            if(list.contains(A.charAt(i))){                      //
+                for(int j=i;j<A.length();j++){                   //
+                    counter = counter+1;                         //  Time complexity O(N^2)
+                }                                                //
+            }                                                    //
+        }                                                        //
         return (int)counter;
     }
 
     public static int solveOptimized(String A){
         long counter=0;
-        for(int i=0;i<A.length();i++){
-            if(A.charAt(i)=='a' || A.charAt(i)=='i' || A.charAt(i)=='o' || A.charAt(i)=='u' || A.charAt(i)=='e'||
-                    A.charAt(i)=='A' || A.charAt(i)=='E' || A.charAt(i)=='I' || A.charAt(i)=='O' || A.charAt(i)=='U'){
-                counter = counter+(A.length()-i);
-            }
-        }
+        for(int i=0;i<A.length();i++){                                                                                  //
+            if(A.charAt(i)=='a' || A.charAt(i)=='i' || A.charAt(i)=='o' || A.charAt(i)=='u' || A.charAt(i)=='e'||       //
+                    A.charAt(i)=='A' || A.charAt(i)=='E' || A.charAt(i)=='I' || A.charAt(i)=='O' || A.charAt(i)=='U'){  // Time complexity O(N)
+                counter = counter+(A.length()-i);                                                                       //
+            }                                                                                                           //
+        }                                                                                                               //
         return (int)counter;
     }
 
