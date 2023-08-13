@@ -6,6 +6,13 @@ public class Rotate90degree {
     * 1. Take transpose of the given matrix
     * 2. From the result reverse each row.
     *
+    * Eg:[1,2,3]
+    *    [4,5,6]
+    *    [7,8,9]
+    * After rotating to 90 degree the result will be,
+    *   [7,4,1]
+    *   [8,5,2]
+    *   [9,6,3]
     **/
     public static void main(String[] args) {
         int[][] input = {{1, 2, 3}, {4, 5, 6}, {7, 8, 9}};
