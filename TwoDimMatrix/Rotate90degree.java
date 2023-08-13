@@ -1,6 +1,12 @@
 package git.TwoDimMatrix;
 
 public class Rotate90degree {
+    /*
+    * For rotating a matrix by 90 we need to do 2 steps.
+    * 1. Take transpose of the given matrix
+    * 2. From the result reverse each row.
+    *
+    **/
     public static void main(String[] args) {
         int[][] input = {{1, 2, 3}, {4, 5, 6}, {7, 8, 9}};
         int rows = input.length;
