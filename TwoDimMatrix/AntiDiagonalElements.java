@@ -27,7 +27,7 @@ public class AntiDiagonalElements {
     public static void OptimizedFormula(int[][] input){
         for(int i=0;i<input.length;i++){                //
             int j=input[i].length-1-i;                  //  Optimized formula for finding the antidiagonal elements
-            System.out.println(input[i][j]);            //   j=N-1-i; Time complexity is O(N)
+            System.out.println(input[i][j]);            //   j=N-1-i; because i+j=N-1 Time complexity is O(N)
         }                                               //
     }
 }
