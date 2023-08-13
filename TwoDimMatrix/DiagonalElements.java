@@ -15,7 +15,7 @@ public class DiagonalElements {
         int rows = input.length;
         int col = input[0].length;
         for(int i=0;i<rows;i++){
-            System.out.println(input[i][i]); // only iterate rows and print the ith row and ith column instead of jth column we are using only ith column as
+            System.out.println(input[i][i]); // only iterate rows and print the ith row and ith column, instead of jth column we are using only ith column as
                                             //  diagonal elements will have same row and same column
         }
     }
