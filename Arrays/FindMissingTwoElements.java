@@ -5,7 +5,7 @@ import java.util.List;
 
 public class FindMissingTwoElements {
     public static void main(String[] args) {
-        int[] input={};
+        int[] input={1,3,4,5};
         int N=input.length;
         boolean[] mark=new boolean[N+3];
         for(int i=0;i<N;i++){
